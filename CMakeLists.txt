@@ -16,6 +16,7 @@ add_compile_definitions(DUCKDB_EXTENSION_CLASS=${EXTENSION_CLASS}Extension)
 add_compile_definitions(DUCKDB_EXTENSION_HEADER="${TARGET_NAME}_extension.hpp")
 
 set(EXTERNAL_EXTENSION_DIRECTORIES ../${TARGET_NAME})
+set(BUILD_PARQUET_EXTENSION TRUE)
 
 add_subdirectory(duckdb)
 
